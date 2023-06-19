@@ -27,6 +27,10 @@ const connect = ()=>{
     }
 }
 
+app.get('/',(req,res)=>{
+    res.send('Hello World!')
+})
+
 // ROUTES
 app.use('/tasks', taskRouter)
 
